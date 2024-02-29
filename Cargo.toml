@@ -1,0 +1,12 @@
+[package]
+name = "mysqlclient-sys-ext"
+version = "0.2.5"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies]
+pkg-config = "0.3.9"
+
+[target.'cfg(target_env = "msvc")'.build-dependencies]
+vcpkg = "0.2.4"
